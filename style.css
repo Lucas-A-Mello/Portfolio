@@ -2,3 +2,97 @@
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    animation: zoom 25s;
+}
+
+/* Animação de zoom na imagem do background */
+@keyframes zoom{
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.banner{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.banner h1{
+    color: white;
+    font-size: 3.5rem;
+    font-family: "Baloo Da 2", serif;
+    font-weight: 200;
+    text-shadow: .2rem .3rem 2px rgba(0,0,0,.4);
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+    animation: moveBanner 1s 0.5s forwards;
+    opacity: 0;
+}
+
+.banner p{
+    font-family: "Josefin Slab", serif;
+    color: white;
+    font-size: 2rem;
+    text-shadow: .2rem .3rem 2px rgba(0,0,0,.4);
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.7s forwards;
+}
+
+.banner button{
+    font-family: "Mulish", serif;
+    color: black;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+    border-radius: 5px;
+    opacity: 0;
+    animation: moveBanner 1s 0.9s forwards;
+}
+
+.banner button:hover{
+    background: white;
+}
+
+@keyframes moveBanner{
+    0%{
+        transform: translateY(10rem) rotateY(-30deg);
+    }
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
