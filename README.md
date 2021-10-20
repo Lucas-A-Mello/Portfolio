@@ -25,7 +25,7 @@ Uma divisão com meus projetos em desenvolvimento e um formulário de contato pa
 
 ----
 
-## 🚀Tecnologia utilizadas
+## 🚀Tecnologias utilizadas
 
 
 - [HTML5](https://www.learn-html.org/)
@@ -36,7 +36,6 @@ Uma divisão com meus projetos em desenvolvimento e um formulário de contato pa
 
 ## 🧾Contatos
 
-<br>
 <h4>😁Para entrar em contato comigo:</h4>
 
 <div style="text-align:left"> 
