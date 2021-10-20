@@ -15,6 +15,10 @@
     --font-action: "Mulish", serif;
 }
 
+html{
+    scroll-behavior: smooth; /* Deixa a rolagem mais suave dos links (home, contato, projetos e etc*/
+}
+
 .hamburguer{
     /*background-color: red;*/
     width: 2rem;
@@ -43,7 +47,7 @@
 }
 
 .show-menu #line1{
-    transform: rotate(45deg) translate(.3rem, .45rem);
+    transform: rotate(45deg) translate(0.3rem, 0.45rem);
 }
 
 .show-menu #line2{
@@ -52,7 +56,7 @@
 }
 
 .show-menu #line3{
-    transform: rotate(-45deg) translate(.3rem, -.45rem);
+    transform: rotate(-45deg) translate(0.3rem, -0.45rem);
 }
 
 .hamburguer span{
@@ -146,7 +150,7 @@ header{
 
 .banner button{
     font-family: var(--font-action);
-    color: black;
+    color: white;
     cursor: pointer;
     letter-spacing: 0.1rem;
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
@@ -160,7 +164,7 @@ header{
 }
 
 .banner button:hover{
-    background: white;
+    box-shadow: 0 0.1rem 0.6rem rgb(230, 81, 26);
 }
 
 @keyframes moveBanner{
@@ -490,6 +494,7 @@ header{
     transition: all 0.3s;
 }
 
+/* Caracteres não ficam sobrepostos pelo título nas caixas de texto */
 .field:valid ~ label, .field:focus ~ label{
     top: 0;
     font-size: 0.7rem;
@@ -506,4 +511,64 @@ header{
     text-transform: uppercase;
     margin-top: 1rem;
     cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 4rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #bd5113;
+    background: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    border-radius: 0.3rem; /* Arredonda a borda */
+    box-shadow: 0 0.1rem 0.6rem black;
+}
+
+#link-topo:hover{
+    box-shadow: 0 0.1rem 0.6rem rgb(230, 81, 26);
+    color: rgb(231, 228, 228);
 }
