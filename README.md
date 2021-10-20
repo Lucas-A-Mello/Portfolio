@@ -21,7 +21,7 @@ Uma divisão com meus projetos em desenvolvimento e um formulário de contato pa
 </h4>
 <br>
 
-O controle das tarefas desse projeto será realizado no GitHub.
+<h4>O controle das tarefas desse projeto será realizado no GitHub.</h4>
 
 ----
 
@@ -34,9 +34,10 @@ O controle das tarefas desse projeto será realizado no GitHub.
 
 ----
 
-## Contatos
+## 🧾Contatos
 
 <br>
+<h4>😁Para entrar em contato comigo:</h4>
 
 <div style="text-align:left"> 
   
